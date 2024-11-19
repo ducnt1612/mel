@@ -1,0 +1,457 @@
+<!DOCTYPE html><html lang="vi"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎀 STILETTO SYDNEY 🎀</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+
+    <style>
+        .button-home {
+    display: inline-block; /* Để nút nằm ngang */
+    margin-top: 10px; /* Khoảng cách trên nút */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #000000; /* Nền đen */
+    color: #FFD700; /* Chữ màu bạc sáng */
+
+
+    border: 1px solid #D3D3D3; /* Viền màu bạc sáng */
+    border-radius: 10px;
+    text-decoration: none; /* Bỏ gạch chân */
+    font-weight: bold; /* Chữ đậm */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */
+}
+
+.button-home:hover {
+    background-color: #ffffff; /* Nền khi hover */
+    color: #1a1a1a; /* Chữ khi hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
+}
+      body {
+        overflow-x: hidden;
+
+        background-color: #000000; /* Nền đen */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #D3D3D3; /* Viền màu bạc sáng */
+        border-radius: 20px;
+}
+.header {
+    margin: 10px 0 20px; /* Khoảng cách trên, dưới */
+    padding: 20px; /* Khoảng cách bên trong */
+    background-color: #000000; /* Nền tối hơn */
+    color: #ffffff; /* Chữ màu vàng nhạt */
+    display: flex; /* Định dạng layout flex */
+    flex-direction: column; /* Bố trí theo cột */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    text-align: center; /* Căn giữa chữ */
+ 
+    border-radius: 10px; /* Góc bo tròn */
+    font-weight: bold; /* Chữ đậm */
+    letter-spacing: 1px; /* Khoảng cách giữa các ký tự */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Hiệu ứng bóng chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển đổi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */
+}
+.header:hover {
+  
+    transform: scale(1.05); /* Phóng to khi hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Hiệu ứng đổ bóng tăng khi hover */
+}
+      .header h1 {
+        font-size: 30px;
+      }
+      h2 {
+        background-color: #000000; /* Nền tối */
+        font-size: 27px;
+        color: #ffffff; /* Chữ màu bạc sáng */
+        text-align: center;
+        margin: 0;
+     
+        border-radius: 10px;
+        border: 1px solid #D3D3D3; /* Viền màu bạc sáng */
+
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Hiệu ứng bóng chữ */
+    cursor: pointer; /* Con trỏ chuột */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển đổi */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */
+}
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto; /* Căn giữa theo chiều ngang */
+        padding: 20px;
+        background-color: #1a1a1a; /* Nền đen */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */
+        color: #C0C0C0; /* Chữ màu bạc sáng */
+        border-radius: 10px;
+        text-align: center; /* Căn giữa nội dung bên trong */
+        font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #D3D3D3; /* Viền màu bạc sáng */
+      }
+      .region-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+      .region-btn {
+       
+        border-radius: 10px;
+        padding: 10px; 20px;
+        font-weight: bold;
+        text-align: center;
+        display: flex; /* Căn giữa nội dung */
+        justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+        align-items: center; /* Căn giữa nội dung theo chiều dọc */
+        margin: 10px; /* Tăng khoảng cách giữa các nút */
+        background-color: #000000; /* Nền tối */
+    color: #C0C0C0; /* Chữ màu bạc sáng */
+    
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */
+}
+      
+
+      .region-btn:hover {
+        background-color: #ffffff;
+        transform: scale(1.05);
+        color: #000000; /* Chữ vàng */
+      }
+      .spinner-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        color: #ffffff; /* Chữ vàng */
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1000;
+        border: 1px solid #ffffff; /* Viền vàng */
+ 
+        background-color: #000000; /* Nền màu bạc */
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-weight: 700;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(192, 192, 192, 0.6); /* Hiệu ứng đổ bóng màu bạc */
+   
+        border-radius: 10px;
+      }
+      .spinner {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+        margin-bottom: 10px;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .notification {
+        display: none; /* Ẩn thông báo mặc định */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000; /* Nền tối */
+
+        padding: 20px; /* Tăng khoảng cách giữa nội dung và viền */
+        border-radius: 10px; /* Bo góc */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+        text-align: center;
+        z-index: 1000;
+        color: #ffffff;
+        border: 2px solid #D3D3D3; /* Viền màu bạc sáng */
+        width: 300px;
+        height: 300px;
+
+      }
+      .notification img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+      }
+      .notification p {
+        font-size: 14px;
+
+        font-weight: 700;
+        color: #ffffff; /* Chữ màu bạc sáng */
+
+      }
+      .button-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #ffffff; /* Nền đen */       
+        color: #000000; /* Chữ màu bạc sáng */
+    border: 2px solid #ffffff; /* Viền màu bạc sáng */
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Hiệu ứng đổ bóng */      }
+      .button-link:hover {
+        background-color: #00ff4c;
+        color: #000000; /* Chữ màu bạc sáng */
+      }
+      .banner-container {
+        margin-top: 20px;
+        overflow: hidden;
+        width: 90%;
+      }
+      .banner-slider {
+        display: flex;
+        animation: scroll 20s linear infinite;
+      }
+      .banner-slider img {
+        max-width: 200%;
+        height: 70px;
+
+        height: 150px;
+        border: 2px solid #D3D3D3; /* Viền màu bạc sáng */
+        margin: 0 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>🎀STILETTO SYDNEY🎀</h1>
+      <div class="banner-container">
+        <div class="banner-slider">
+          <img src="images/taoanhdep-lam-net-anh-92190.jpg" alt="Image 1">
+          <img src="images/taoanhdep-lam-net-anh-99531.jpg" alt="Image 2">
+          <img src="images/photo-2024-10-29-23-43-13.jpg" alt="Image 3">
+          <img src="images/photo-2024-10-29-23-42-21-3.jpg" alt="Image 4">
+          <img src="images/photo-2024-10-29-23-42-21.jpg" alt="Image 5">
+          <img src="images/a8652ff8c84f5fe975c181d27a040e40.jpg" alt="Image 6">
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>TOÀN BỘ KHU VỰC</h2>
+      <div class="region-list">
+        <div class="region-btn" onclick="toggleDistricts('Seoul')">Sydney</div>
+        <div class="region-btn" onclick="toggleDistricts('Busan')">Melbourne</div>
+        <div class="region-btn" onclick="toggleDistricts('Incheon')">
+          Brisbane
+        </div>
+        <div class="region-btn" onclick="toggleDistricts('Daegu')">Perth</div>
+        <div class="region-btn" onclick="toggleDistricts('Daejeon')">
+          Adelaide
+        </div>
+        <div class="region-btn" onclick="toggleDistricts('Gwangju')">
+          Gold Coast
+        </div>
+        <div class="region-btn" onclick="toggleDistricts('Ulsan')">Canberra</div>
+        <div class="region-btn" onclick="toggleDistricts('Gyeonggi-do')">
+          Newcastle
+        </div>
+        <div class="region-btn" onclick="toggleDistricts('Jeju')">Central Coast</div>
+      </div>
+      <div id="districts" class="detail-info"></div>
+    </div>
+
+    <div class="spinner-container" id="spinnerContainer">
+      <div class="spinner"></div>
+      <p>
+        Vui lòng đợi trong giây lát hệ thống hệ thống đang tiến hành kiểm tra
+        cho bạn...
+      </p>
+    </div>
+
+    <div id="notification" class="notification">
+      <img src="images/Red-round-white-palm-prohibition-sign-traffic-stop-156632-wh300-removebg-preview.png" alt="Logo">
+      <p>
+        Rất tiếc! Hiện tại bạn đang bị giới hạn chức năng vì chưa sử dụng dịch vụ<br>
+        Vui lòng nhập mã đặt lịch sử dụng dịch vụ để được trải nghiệm không giới
+        hạn !!! Nếu chưa có vui lòng bấm vào dưới đây hoặc liên hệ hỗ trợ viên
+        để được hỗ trợ
+      </p>
+    
+      <button id="closeNotification" class="button-link" style="background-color: #ffffff">
+        Đóng
+      </button>
+    </div>
+
+    <script>
+      const districtsData = {
+        Seoul: [
+          "Eastern Suburbs",
+          "Hills District",
+          "Inner West",
+          "Lower North Shore",
+          "Northern Beaches",
+          "North Shore",
+          "Southern Sydney",
+        ],
+        Busan: [
+          "Carlton",
+          "Carlton North",
+          "Docklands",
+          "East Melbourne",
+          "Jolimont",
+        ],
+        Incheon: [
+          "City of Brisbane",
+          "City of Ipswich",
+          "Logan City",
+          "Redland City",
+          "Somerset Region",
+        ],
+        Daegu: [
+          "Mandurah",
+          "Perth",
+          "Rockingham",
+          "Bunbury",
+          "Mirrabooka",
+        ],
+        Daejeon: [
+          "Meningie",
+          "Angaston",
+          "Lyndoch",
+          "Delamere",
+        ],
+        Gwangju: [
+          "Albert",
+          "Broadwater",
+          "Mudgeeraba",
+          "Surfers",
+        ],
+        Ulsan: [
+          "Molonglo",
+          "Ginninderra",
+          "Brindabella",
+          "Canberra",
+        ],
+        "Gyeonggi-do": [
+          "North Canberra",
+          "South Canberra",
+          "Woden Valley",
+          "Weston Creek",
+          "Tuggeranong",
+          "Gungahlin",
+        ],
+        Jeju: ["Woy Woy", "Greater Sydney"],
+      };
+
+      // Mã JavaScript của bạn ở đây
+      document.getElementById("closeNotification").onclick = function () {
+        document.getElementById("notification").style.display = "none"; // Ẩn thông báo
+      };
+
+      // Các hàm khác của bạn..
+
+      function toggleDistricts(city) {
+        const districtsDiv = document.getElementById("districts");
+        districtsDiv.innerHTML = "";
+
+        if (districtsDiv.dataset.activeCity === city) {
+          districtsDiv.style.display = "none";
+          districtsDiv.dataset.activeCity = "";
+          return;
+        }
+
+        const districts = districtsData[city] || [];
+        districts.forEach((district) => {
+          const div = document.createElement("div");
+          div.className = "region-btn";
+          div.innerText = district;
+          div.onclick = () => simulateDataCheck(district);
+          districtsDiv.appendChild(div);
+        });
+
+        districtsDiv.style.display = "block";
+        districtsDiv.dataset.activeCity = city;
+      }
+
+      function simulateDataCheck(district) {
+        const spinnerContainer = document.getElementById("spinnerContainer");
+        spinnerContainer.style.display = "block";
+
+        setTimeout(() => {
+          spinnerContainer.style.display = "none";
+          showNotification();
+        }, 7000);
+      }
+
+      function showNotification() {
+        document.getElementById("notification").style.display = "block";
+      }
+
+      // Hàm yêu cầu vị trí
+      function requestLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+          alert("Trình duyệt của bạn không hỗ trợ Geolocation.");
+        }
+      }
+
+      function showPosition(position) {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        console.log(`Vị trí của bạn: Latitude: ${lat}, Longitude: ${lon}`);
+        alert(`Vị trí của bạn: Latitude: ${lat}, Longitude: ${lon}`);
+      }
+
+      function showError(error) {
+        switch (error.code) {
+          case error.PERMISSION_DENIED:
+            alert("Người dùng đã từ chối yêu cầu vị trí.");
+            break;
+          case error.POSITION_UNAVAILABLE:
+            alert("Vị trí không khả dụng.");
+            break;
+          case error.TIMEOUT:
+            alert("Thời gian yêu cầu vị trí đã hết hạn.");
+            break;
+          case error.UNKNOWN_ERROR:
+            alert("Đã xảy ra lỗi không xác định.");
+            break;
+        }
+      }
+
+      // Gọi hàm yêu cầu vị trí khi trang được tải
+      //window.onload = requestLocation;
+    </script>
+  
+
+
+<a href="https://sexylove-x.github.io/fr/" class="button-home">Trang chủ</a> <!-- Link đến trang chủ khác -->
+  <div class="banner-container">
+    <!-- Banner code here -->
+  </div>
+
+</body></html>
